@@ -1,0 +1,258 @@
+/* @font-face {
+  font-family: "name" format("woff2");
+  src: url(../fonts/url.woff2);
+  font-display: swap;
+  font-weight: weight;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: "RedCollar";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("../fonts/Redcollar.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "TT Commons";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("../fonts/TTCommons_Regular.woff2") format("woff2");
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+:root {
+  --bg-color: #000000;
+  --text-color: #ffffff;
+  --brand-color: #f51b1b;
+  --gray-color: #666666;
+
+  --title-1-size: 24px;
+  --title-2-size: 16px;
+  --text-main-size: 20px;
+  --text-2-size: 18px;
+}
+
+.title-1 {
+  font-family: "RedCollar", sans-serif;
+  line-height: 28px;
+  font-size: var(--title-1-size);
+  letter-spacing: -0.2px;
+}
+
+.title-2 {
+  font-family: "RedCollar", sans-serif;
+  font-size: var(--title-2-size);
+  line-height: 100%;
+  letter-spacing: 0;
+}
+
+.text-main {
+  font-family: "TT Commons", sans-serif;
+  font-size: var(--text-main-size);
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+
+.text-2 {
+  font-family: "TT Commons", sans-serif;
+  font-size: var(--text-2-size);
+  line-height: 24px;
+  letter-spacing: -0.1px;
+}
+
+body {
+  font-family: "TT Commons", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.wrapper {
+  padding: 40px;
+  margin: 0 auto;
+  max-width: 1440px;
+  position: relative;
+}
+
+.main {
+  display: flex;
+  gap: 30px;
+}
+
+.logo {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.cover {
+  min-width: 320px;
+}
+
+.cover__img {
+  display: block;
+}
+
+.cover__descr {
+  background-color: var(--brand-color);
+  position: relative;
+  z-index: 1;
+  padding: 40px 24px;
+  border-radius: 24px 24px 0 0;
+  /* height: 100%; */
+  margin-top: -20px;
+}
+
+.cover__descr::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  height: 19px;
+  width: 322px;
+  background-image: url("/images/cover_arrow.png");
+  transform: translateX(-50%);
+}
+
+.cover__name {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 8px;
+}
+
+.cover__info {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.cover-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cover-list__item {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.content {
+  padding-top: 18px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.content__about {
+  max-width: 692px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.skils-table {
+  border: 1px solid var(--text-color);
+  padding: 48px 50px 48px 28px;
+  width: 100%;
+  flex-grow: 1;
+  position: relative;
+}
+
+.skils-table::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 3;
+  top: -1px;
+  left: 57px;
+  height: 19px;
+  width: 60px;
+  background-image: url("/images/skils_arrow.svg");
+}
+
+.skils-table__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.skils-item {
+  display: flex;
+  gap: 72px;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.skils-item::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: var(--gray-color);
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+}
+
+.skils-item:last-child::after {
+  display: none;
+}
+
+.skils-item__title {
+  margin: 0;
+  padding: 0;
+  min-width: 124px;
+}
+
+.skils-item__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.skils-element {
+  display: flex;
+  flex-direction: column;
+}
+
+.skils-element span {
+  color: var(--gray-color);
+}
+
+.skils-element__list {
+  display: flex;
+  gap: 8px 32px;
+  align-items: center;
+  flex-wrap: wrap;
+}
