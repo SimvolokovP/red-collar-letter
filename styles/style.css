@@ -119,6 +119,8 @@ body {
 
 .cover__img {
   display: block;
+  object-fit: cover;
+  object-position: top;
 }
 
 .cover__descr {
@@ -139,7 +141,7 @@ body {
   left: 50%;
   height: 19px;
   width: 322px;
-  background-image: url("/images/cover_arrow.png");
+  background-image: url("../images/cover_arrow.png");
   transform: translateX(-50%);
 }
 
@@ -168,6 +170,10 @@ body {
   align-items: center;
 }
 
+.cover-list__item a {
+  max-width: 200px;
+}
+
 .content {
   padding-top: 18px;
   display: flex;
@@ -176,10 +182,17 @@ body {
 }
 
 .content__about {
-  max-width: 692px;
   padding: 0;
   margin: 0;
+}
+
+.content__list {
+  margin: 0;
+}
+
+.content__text {
   margin-bottom: 32px;
+  max-width: 692px;
 }
 
 .skils-table {
@@ -199,7 +212,7 @@ body {
   left: 57px;
   height: 19px;
   width: 60px;
-  background-image: url("/images/skils_arrow.svg");
+  background-image: url("../images/skils_arrow.svg");
 }
 
 .skils-table__list {

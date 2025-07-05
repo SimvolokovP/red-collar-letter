@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/media.css" />
+    <!-- <link href="https://db.onlinewebfonts.com/c/f02cf2e6e27a17bcfe9efa18c041c208?family=Redcollar" rel="stylesheet"> -->
   </head>
   <body>
     <div class="wrapper">
@@ -21,10 +22,10 @@
         /></a>
       </div>
       <main class="main">
-        <div class="main__cover cover">
+        <section class="main__cover cover">
           <img
             width="320"
-            height="355"
+            height="375"
             class="cover__img"
             src="./images/cover_image.jpg"
             alt="photo"
@@ -126,24 +127,53 @@
                   </svg>
 
                   <a class="text-main" href="https://github.com/SimvolokovP"
-                    >https://github.com/</a
+                    >https://github.com/SimvolokovP</a
                   >
                 </li>
               </ul>
             </div>
           </div>
-        </div>
-        <div class="main__content content">
-          <p class="content__about text-2">
-            Привет! Я обладаю знаниями в HTML, CSS, JavaScript и фреймворках,
-            таких как React и Angular. Я всегда стараюсь быть в курсе последних
-            технологических тенденций и постоянно улучшать свои навыки. Люблю
-            работать в команде и готов делиться своими знаниями и опытом
-            с коллегами. Я также умею работать с различными инструментами
-            и библиотеками, такими как Bootstrap, jQuery, Sass и другие. Я готов
-            принять любой вызов и настроен на постоянное развитие в своей
-            профессии
-          </p>
+        </section>
+        <section class="main__content content">
+          <div class="content__text">
+            <p class="content__about text-2">
+              Привет! Меня зовут Павел, и я фронтенд-разработчик с опытом работы
+              около 2 лет. Я увлечен созданием красивых и функциональных сайтов
+              и веб-приложелий. В последнее время активно изучаю и разрабаотываю
+              telegram mini apps. <br />
+              Ниже я приведу несколько фактов обо мне, которые могут быть
+              интересными:
+            </p>
+            <br>
+            <ul class="content__list text-2">
+              <li>
+                Учусь в университете на специальности "Информационные системы и
+                технологии".
+              </li>
+              <li>
+                Я умею работать с различными языками программирования и
+                технологиями, такими как HTML, CSS, JavaScript, React,
+                TypeScript и другими.
+              </li>
+              <li>
+                Я создал несколько лендингов и сайтов-визиток для малых
+                бизнесов, которые помогли им привлекать больше клиентов.
+              </li>
+              <li>
+                Я создал небольшой e-commerce дла автомагазина, который позволил
+                организовать доставку и бронь товаров.
+              </li>
+              <li>
+                Я создал несколько telegram mini-apps, каждый из которых был
+                уникальным проектом: от тапалок и кейсов до корпоративного
+                приложения-игры "Тайный санта" и интернет-магазина.
+              </li>
+              <li>
+                Я участвовал в стартапе по созданию обучающего портала с
+                геймификацией образования, где получил ценный опыт и знания.
+              </li>
+            </ul>
+          </div>
           <div class="content__skils skils-table">
             <ul class="skils-table__list list-reset">
               <li class="skils-table__item skils-item">
@@ -154,20 +184,16 @@
                   <ul class="skils-item__list list-reset">
                     <li class="skils-item__list--element skils-element">
                       <div class="text-2">
-                        Воронежский Государственный Университет
+                        Воронежский Государственный Университет Инженерных
+                        Техногогий
                       </div>
-                      <span>Прикладная математика и информатика</span>
-                      <span>2017-2022</span>
-                    </li>
-                    <li class="skils-item__list--element skils-element">
-                      <div class="text-2">Skillbox</div>
-                      <span>Frontend-разработчик</span>
-                      <span>2022</span>
+                      <span>Информационные системы и технологии</span>
+                      <span>2022-2026</span>
                     </li>
                   </ul>
                 </div>
               </li>
-              <li class="skils-table__item skils-item">
+              <!-- <li class="skils-table__item skils-item">
                 <div class="skils-item__left">
                   <h3 class="skils-item__title title-2">Карьера</h3>
                 </div>
@@ -187,7 +213,7 @@
                     </li>
                   </ul>
                 </div>
-              </li>
+              </li> -->
               <li class="skils-table__item skils-item">
                 <div class="skils-item__left">
                   <h3 class="skils-item__title title-2">Навыки</h3>
@@ -201,20 +227,22 @@
                         <li class="skils-element__list--item text-2">
                           JavaScript
                         </li>
-                        <li class="skils-element__list--item text-2">HTML</li>
-                        <li class="skils-element__list--item text-2">CSS</li>
+                        <li class="skils-element__list--item text-2">React</li>
                         <li class="skils-element__list--item text-2">
-                          JavaScript
+                          TypeScript
                         </li>
-                        <li class="skils-element__list--item text-2">HTML</li>
-                        <li class="skils-element__list--item text-2">CSS</li>
                         <li class="skils-element__list--item text-2">
-                          JavaScript
+                          Redux TK
                         </li>
-                        <li class="skils-element__list--item text-2">HTML</li>
-                        <li class="skils-element__list--item text-2">CSS</li>
                         <li class="skils-element__list--item text-2">
-                          JavaScript
+                          Zustand
+                        </li>
+                        <li class="skils-element__list--item text-2">
+                          Tailwind
+                        </li>
+                        <li class="skils-element__list--item text-2">SCSS</li>
+                        <li class="skils-element__list--item text-2">
+                          tanstack query
                         </li>
                       </ul>
                     </li>
@@ -223,7 +251,7 @@
               </li>
             </ul>
           </div>
-        </div>
+        </section>
       </main>
     </div>
   </body>
