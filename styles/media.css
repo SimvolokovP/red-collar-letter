@@ -60,4 +60,9 @@
   .skils-table__list {
     gap: 24px;
   }
+
+  .cover__descr {
+    height: 307px;
+    padding: 24px 16px;
+  }
 }
